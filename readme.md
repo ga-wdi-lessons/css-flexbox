@@ -203,18 +203,21 @@ footer {
 
 ## You Do: More Flexbox Properties (25 minutes / 1:00)
 
-Time for you to research some more Flexbox properties. You will be assigned one of the following...
+Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
 - `flex-basis`
-- `flex-shrink`
-- `flex-grow`
+- `flex-shrink` and `flex-grow`
+- `flex-wrap`
 - `order`
 
 Your task is to...
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
-* Created a Codepen demonstrating its usage.
+* List the different values this property can take.
+* Create [a Codepen](http://codepen.io) demonstrating the property's usage.
 
-> If you finish early, try exploring some of the [other flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) not assigned in this exercise.
+> You will need to create a Codepen account in order to save your pen and share the link.
+
+If you finish early, try exploring some of the [other flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) not assigned in this exercise.
 
 #### Some Helpful Resources
 
@@ -290,6 +293,13 @@ body {
 
 ## Closing / Questions (5 minutes / 2:10)
 ---
+
+## Resources
+
+* [The Ultimate Flexbox Cheatsheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
+* [CSS Tricks Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+* [Holy Grail Layout - Solved By Flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/)
 
 ## Further Reading
 
