@@ -17,7 +17,9 @@ Screencasts
 
 Let's start out by talking about a problem that anybody who has written CSS has had to deal with:
 
-**I have a `div`. I would like to center it vertically and horizontally on my page.**
+**I have a `div`. I would like to center it vertically and horizontally on my page.** The end result should look something like this...
+
+![centered div](http://i.imgur.com/2jbrXMp.png)
 
 #### You Tell Me: What Should I Try?
 
@@ -186,6 +188,8 @@ footer {
   background-color: #888;
 }
 ```
+
+> You can view the solution on Codepen [here](http://codepen.io/amaseda/pen/rrVYqO).
 
 <details>
   <summary><strong>What's the main axis on here? What about the cross axis?</strong></summary>
