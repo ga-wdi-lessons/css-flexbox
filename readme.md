@@ -124,10 +124,10 @@ Lastly, you can also do nice things like control how you want things to line up 
 | Property | What's It Do? | Examples |
 |----------|---------------|----------|
 | **display**  |               | `flex`   |
-| **flex-direction** | Sets the directional flow of flex items | `row`, `column` |
-| **justify-content** | Align along flex-direction (main axis) | `center`, `space-between` |
-| **align-items** | Align along not-flex-direction (cross axis) | `flex-start`, `center` |
-| **align-content** | Space things along cross axis | `center`, `space-between` |
+| **[flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)** | Sets the directional flow of flex items | `row`, `column` |
+| **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** | Align along flex-direction (main axis) | `center`, `space-between` |
+| **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** | Align along not-flex-direction (cross axis) | `flex-start`, `center` |
+| **[align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)** | Space things along cross axis | `center`, `space-between` |
 
 > That's a lot of CSS properties! Don't worry, you're not expected to memorize all of them. Us instructors need to look them up all the time! [Here's a great resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
