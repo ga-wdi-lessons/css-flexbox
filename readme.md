@@ -249,7 +249,7 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 <details>
   <summary><strong><code>flex-wrap</code></strong></summary>
 
-  > How big the flex items "want" to be
+  > Defines item behavior if they expand beyond a single line.
   >
   > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
