@@ -15,7 +15,7 @@ Screencasts
 
 ## Framing
 
-Remember that GIF from yesterday? Developers used to feel that way all the time defining page layout using CSS. Why is that?
+Remember [that GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif) from yesterday? Developers used to feel that way all the time defining page layout using CSS. Why is that?
 
 HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
 
