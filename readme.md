@@ -13,6 +13,18 @@ Screencasts
 - Contrast `align-items` and `align-self`.
 - Explain what is meant by the "Holy Grail Layout".
 
+## Framing
+
+Remember that GIF from yesterday? Developers used to feel that way all the time defining page layout using CSS. Why is that?
+
+HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
+
+So layout wasn't much of a concern in the beginning. But as the web has evolved, so have the design needs of developers. Unfortunately, it takes a while for CSS -- and by that we mean the CSS Working Group -- to catch up with those needs.
+
+> It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything, especially cross-browser standards.
+
+Fortunately, Flexbox has slowly but surely become a standard over the past few years...
+
 ## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
 Let's start out by talking about a problem that anybody who has written CSS has had to deal with:
@@ -68,18 +80,6 @@ div {
 </details>
 
 > The tough part is that how to vertically center a element depends on its context. Depending on your situation, one or more of the above techniques could work. [Here's an enlightening post on the matter](https://css-tricks.com/centering-in-the-unknown/).
-
-#### An Aside
-
-Vertical alignment has been the laughingstock of CSS for years. How can something so obvious be so difficult to accomplish?
-
-> HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
->
-> So layout wasn't much of a concern in the beginning. But as the web has evolved, so has the needs of developers. So why hasn't a standard for vertical alignment emerged accordingly?
->
-> It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything, especially cross-browser standards.
-
-Fortunately, Flexbox has slowly but surely become a standard over the past few years...
 
 ### Flexbox to the Rescue
 
