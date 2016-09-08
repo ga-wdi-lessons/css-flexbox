@@ -281,12 +281,6 @@ body {
 
 ## You Do: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
 
-Complete [this exercise](https://github.com/ga-wdi-exercises/css-airbnb) using `flexbox` where applicable to replicate the portion of the Airbnb website included in [this screenshot](https://github.com/ga-wdi-exercises/css-airbnb/raw/master/solution.jpg).
-
-### Bonus
-
-Try recreating the **entire homepage**, using `flexbox` where applicable.
-
 ## Closing / Questions (5 minutes / 2:10)
 ---
 
