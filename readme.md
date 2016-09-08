@@ -105,6 +105,8 @@ div {
 }
 ```
 
+> You can view the solution on Codepen [here](http://codepen.io/amaseda/pen/rrVYqO).
+
 ## How It Works (10 minutes / 0:10)
 
 ![flexbox diagram](img/flexbox-diagram.jpg)
@@ -180,6 +182,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 footer {
@@ -189,7 +192,7 @@ footer {
 }
 ```
 
-> You can view the solution on Codepen [here](http://codepen.io/amaseda/pen/rrVYqO).
+> You can view the solution on Codepen [here](http://codepen.io/amaseda/pen/EgjbOW).
 
 <details>
   <summary><strong>What's the main axis on here? What about the cross axis?</strong></summary>
