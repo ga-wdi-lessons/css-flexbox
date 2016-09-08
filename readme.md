@@ -213,6 +213,7 @@ Your task is to...
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * List the different values this property can take.
 * Create [a Codepen](http://codepen.io) demonstrating the property's usage.
+* If possible, practice using some of the flex properties we covered in the previous section.
 
 > You will need to create a Codepen account in order to save your pen and share the link.
 
