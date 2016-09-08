@@ -131,7 +131,6 @@ Lastly, you can also do nice things like control how you want things to line up 
 | **[flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)** | Sets the directional flow of flex items | `row`, `column` |
 | **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** | Align along flex-direction (main axis) | `center`, `space-between` |
 | **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** | Align along not-flex-direction (cross axis) | `flex-start`, `center` |
-| **[align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)** | Space things along cross axis | `center`, `space-between` |
 
 > That's a lot of CSS properties! Don't worry, you're not expected to memorize all of them. Us instructors need to look them up all the time! [Here's a great resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
@@ -205,8 +204,8 @@ footer {
 
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
-- `flex-basis`
-- `flex-shrink` and `flex-grow`
+- `align-content`
+- `flex-grow`
 - `flex-wrap`
 - `order`
 
@@ -229,16 +228,20 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 ### Recap
 
 <details>
-  <summary><strong><code>flex-basis</code></strong></summary>
+  <summary><strong><code>align-content</code></strong></summary>
 
-  > How big the flex items "want" to be
+  > How multiple rows or columns are spaced along the cross-axis. Takes the same properties as justify-content.
+  >
+  > [Example](http://codepen.io/asim-coder/pen/WrMNWR)
 
 </details>
 
 <details>
-  <summary><strong><code>flex-shrink</code></strong></summary>
+  <summary><strong><code>flex-basis</code></strong></summary>
 
-  > If the flex container is too small to accommodate all the flex bases, the proportion a particular flex item will occupy
+  > How big the flex items "want" to be
+  >
+  > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
 </details>
 
@@ -246,6 +249,8 @@ If you finish early, try exploring some of the [other flexbox properties](https:
   <summary><strong><code>flex-grow</code></strong></summary>
 
   > If the flex container is too big for all the flex bases, the proportion a particular flex item will occupy
+  >
+  > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
 </details>
 
@@ -299,6 +304,8 @@ body {
 * [The Ultimate Flexbox Cheatsheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 * [CSS Tricks Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+* [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
+* [Flexplorer](http://bennettfeely.com/flexplorer/)
 * [Holy Grail Layout - Solved By Flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/)
 
 ## Further Reading
