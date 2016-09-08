@@ -238,15 +238,6 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 </details>
 
 <details>
-  <summary><strong><code>flex-basis</code></strong></summary>
-
-  > How big the flex items "want" to be
-  >
-  > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
-
-</details>
-
-<details>
   <summary><strong><code>flex-grow</code></strong></summary>
 
   > If the flex container is too big for all the flex bases, the proportion a particular flex item will occupy
@@ -256,9 +247,27 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 </details>
 
 <details>
+  <summary><strong><code>flex-wrap</code></strong></summary>
+
+  > How big the flex items "want" to be
+  >
+  > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
+
+</details>
+
+<details>
   <summary><strong><code>order</code></strong></summary>
 
   > The order in which you want flex items to appear along the main access. The default is 0. Negative numbers are allowed.
+
+</details>
+
+<details>
+  <summary><strong><code>flex-basis</code></strong></summary>
+
+  > How big the flex items "want" to be
+  >
+  > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
 </details>
 
