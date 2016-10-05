@@ -15,7 +15,7 @@ Screencasts
 
 ## Framing
 
-Remember [that GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif) from yesterday? Developers used to feel that way all the time defining page layout using CSS. Why is that?
+Check out [this GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). Developers used to feel that way all the time defining page layout using CSS. Why is that?
 
 HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
 
@@ -23,7 +23,7 @@ So layout wasn't much of a concern in the beginning. But as the web has evolved,
 
 > It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything, especially cross-browser standards.
 
-Fortunately, Flexbox has slowly but surely become a standard over the past few years...
+Fortunately, Flexbox, a layout mode introduced with CSS3, has slowly but surely become a standard over the past few years. It's designed to ensure that elements on a page behave predictively on varying screen sizes and devices.  
 
 ## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
@@ -104,8 +104,6 @@ div {
   outline: 1px solid red;
 }
 ```
-
-> You can view the solution on Codepen [here](http://codepen.io/amaseda/pen/rrVYqO).
 
 ## How It Works (10 minutes / 0:10)
 
@@ -190,8 +188,6 @@ footer {
   background-color: #888;
 }
 ```
-
-> You can view the solution on Codepen [here](http://codepen.io/amaseda/pen/EgjbOW).
 
 <details>
   <summary><strong>What's the main axis on here? What about the cross axis?</strong></summary>
