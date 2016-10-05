@@ -296,6 +296,8 @@ body {
 
 > A layout so holy, [it has its own Wikipedia article](https://en.wikipedia.org/wiki/Holy_Grail_(web_design)).
 
+[Example](http://codepen.io/takeradi/pen/MyYqKX)
+
 ## You Do: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
 
 ## Break (10 minutes / 1:35)
@@ -304,6 +306,10 @@ body {
 
 ## Closing / Questions (5 minutes / 2:10)
 ---
+
+## Homework
+
+[Fashion Blog](https://github.com/ga-wdi-exercises/fashion-blog)
 
 ## Resources
 
