@@ -103,6 +103,8 @@ div {
 }
 ```
 
+View solution [here](http://codepen.io/awhitley1233/pen/bgpZRE)
+
 ## How It Works (10 minutes / 0:10)
 
 ![flexbox diagram](img/flexbox-diagram.jpg)
@@ -111,7 +113,7 @@ When you declare `display: flex` on a container, it becomes a **flex container**
 
 First, you use `flex-direction` to indicate whether you want the items in the container -- the **flex items** -- to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
 
-When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction: row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. Otherwise, it'll be the Y-axis.
+When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction: row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. If you use `flex-direction: column` or `column-reverse`, the **main axis** will be the Y-axis.
 
 Then, you determine how you want to align or **justify** the items along this main axis using the `justify-content` property. It'll do nice things for you like let you put even spacing between all the items (`space-between` and `space-around`).
 
