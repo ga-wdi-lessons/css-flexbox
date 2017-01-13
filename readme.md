@@ -7,8 +7,8 @@ Screencasts
 ## Learning Objectives
 
 - Give an example of a problem solved by Flexbox.
-- Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible.
 - Contrast flex containers and flex items.
+- Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible.
 - Explain what is meant by the "Holy Grail Layout".
 
 ## Framing
