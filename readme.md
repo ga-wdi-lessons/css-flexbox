@@ -29,7 +29,7 @@ Let's start out by talking about a problem that anybody who has written CSS has 
 
 **I have a `div`. I would like to center it vertically and horizontally on my page.** The end result should look something like this...
 
-![centered div](img/centered-div.png)
+![centered div](img/centered_div.png)
 
 #### You Tell Me: What Should I Try?
 
