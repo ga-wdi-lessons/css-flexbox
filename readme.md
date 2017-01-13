@@ -29,38 +29,40 @@ Let's start out by talking about a problem that anybody who has written CSS has 
 
 **I have a `div`. I would like to center it vertically and horizontally on my page.** The end result should look something like this...
 
-![centered div](http://i.imgur.com/2jbrXMp.png)
+![centered div](img/centered-div.png)
 
 #### You Tell Me: What Should I Try?
 
 ```html
-<body>
-  <div>This is my div!</div>
-</body>
+<html>
+  <body>
+    <div> Div 1 </div>
+  </body>
+</html>
 ```
 
 ```CSS
-html {
-  height: 100%;
-}
-
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
 div {
   width: 100px;
   height: 100px;
-  outline: 1px solid red;
+  background: #990012;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font: 14pt Comic Sans MS;
+  text-align: center;
+  line-height: 100px;
 }
 ```
 
 <details>
   <summary><strong>These might work...</strong></summary>
 
-  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the element. We would need to know the exact height of the element and container in order to get this exactly right. This can also get tedious when there is more than one element in a container.
+  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the container (body) element. We would need to know the exact height of the element and container in order to get this exactly right. This can also get tedious when there is more than one element in a container.
   >
   > **Margin**: Similarly, we could add some margin to the element we are trying to center. The same issues remain.
   >
@@ -82,16 +84,10 @@ div {
 ### Flexbox to the Rescue
 
 ```CSS
-html {
-  height: 100%;
-}
-
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -99,7 +95,12 @@ body {
 div {
   width: 100px;
   height: 100px;
-  outline: 1px solid red;
+  background: #990012;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font: 14pt Comic Sans MS;
+  text-align: center;
+  line-height: 100px;
 }
 ```
 
