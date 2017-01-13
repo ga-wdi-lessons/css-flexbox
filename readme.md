@@ -213,6 +213,8 @@ main {
 }
 ```
 
+[Solution on CodePen](http://codepen.io/awhitley1233/pen/PWzOPg)
+
 ## You Do: More Flexbox Properties (25 minutes / 1:00)
 
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
