@@ -91,17 +91,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-div {
-  width: 100px;
-  height: 100px;
-  background: #990012;
-  color: #FFFFFF;
-  border-radius: 10px;
-  font: 14pt Comic Sans MS;
-  text-align: center;
-  line-height: 100px;
-}
 ```
 
 View solution [here](http://codepen.io/awhitley1233/pen/EZyvMY)
@@ -135,33 +124,58 @@ Lastly, you can also do nice things like control how you want things to line up 
 
 ## Problem 2: Make the Footer Stick (10 minutes / 0:35)
 
-I want my footer to lie along the bottom of my page.
+I want my footer to lie along the bottom of my page. Once I've accomplished that, I want to evenly distribute the content boxes horizontally inside of the `<main>` element.
+
+![flexbox layout](img/flex_box_layout.png)
+
+[Example on CodePen](http://codepen.io/awhitley1233/pen/ygJzqy)
 
 #### You Tell Me: What Should I Try?
 
 ```html
-<body>
-  <header>This is my header.</header>
-  <main><p>Blah blah blah blah blah...</p></main>
-  <footer>This is my footer!</footer>
-</body>
+<html>
+  <header>
+    FlexBox
+  </header>
+  <main>
+    <section>Content 1</section>
+    <section>Content 2</section>
+    <section>Content 3</section>
+  </main>
+  <footer>
+    CodePen by Andrew Whitley
+  </footer>
+</html>
 ```
 
 ```CSS
-html {
-  height: 100%;
-}
-
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
+  font: 12pt Comic Sans MS;
 }
 
-footer {
+header, footer {
   width: 100%;
-  height: 50px;
-  background-color: #888;
+  height: 30px;
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+}
+
+main {
+  background: #D3D3D3;
+}
+
+section {
+  width: 100px;
+  background: #990012;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
 }
 ```
 
@@ -170,32 +184,34 @@ Making the footer lie against the bottom of the screen is pretty easy: just use 
 ### Flexbox to the Rescue
 
 ```CSS
-html {
-  height: 100%;
-}
-
 body {
-  min-height: 100%;
-  background-color: #ccc;
+  min-height: 100vh;
   margin: 0 auto;
+  font: 12pt Comic Sans MS;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: #888;
-}
 ```
 
 <details>
-  <summary><strong>What's the main axis on here? What about the cross axis?</strong></summary>
+  <summary><strong>What's the main axis of the `<body>`on here? What about the cross axis?</strong></summary>
 
   > Main: y-axis. Cross: x-axis.
 
 </details>
+
+<br />
+
+Now let's horizontally distribute the `<section>` elements containing the page's content inside of the `<main>`. What element should we style?
+
+```CSS
+main {
+  background: #D3D3D3;
+  display: flex;
+  justify-content: space-around;
+}
+```
 
 ## You Do: More Flexbox Properties (25 minutes / 1:00)
 
@@ -280,24 +296,27 @@ Obviously, this layout won't work on tiny screens, unless you really like super-
 
 Before flexbox, this involved a lot of pushing and shoving with dimensions and positioning. You would essentially have to write two completely separate stylesheets: one for mobile, and one for desktop.
 
-With flexbox, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
+With flexbox, just change the `flex-direction` for smaller screen sizes, make any size / order adjustments on the sections of the page, and you're pretty much done!
 
 ```css
-body {
-  display: flex;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 480px){
-  body {
+@media screen and (max-width: 600px){
+  main {
     flex-direction: column;
+  }
+
+  nav, section, aside {
+    width: 100%;
+  }
+
+  section {
+    order: 1;
   }
 }
 ```
 
 > A layout so holy, [it has its own Wikipedia article](https://en.wikipedia.org/wiki/Holy_Grail_(web_design)).
 
-[Example](http://codepen.io/takeradi/pen/MyYqKX)
+[Example](http://codepen.io/awhitley1233/pen/XpKzqV)
 
 ## You Do: [Hyrule Potion Shop](https://github.com/ga-dc/hyrule_potion_shop) (10 minutes / 1:25)
 
