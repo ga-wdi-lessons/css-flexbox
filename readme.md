@@ -103,7 +103,7 @@ div {
 }
 ```
 
-View solution [here](http://codepen.io/awhitley1233/pen/bgpZRE)
+View solution [here](http://codepen.io/awhitley1233/pen/EZyvMY)
 
 ## How It Works (10 minutes / 0:10)
 
