@@ -324,7 +324,7 @@ With flexbox, just change the `flex-direction` for smaller screen sizes, make an
 
 ## Break (10 minutes / 1:35)
 
-## You Do: [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
+## You Do (Finish for HW): [Airbnb](https://github.com/ga-wdi-exercises/css-airbnb) (30 minutes / 2:05)
 
 ## Closing / Questions (5 minutes / 2:10)
 ---
