@@ -306,10 +306,6 @@ With flexbox, just change the `flex-direction` for smaller screen sizes, make an
     flex-direction: column;
   }
 
-  nav, section, aside {
-    width: 100%;
-  }
-
   section {
     order: 1;
   }
@@ -328,10 +324,6 @@ With flexbox, just change the `flex-direction` for smaller screen sizes, make an
 
 ## Closing / Questions (5 minutes / 2:10)
 ---
-
-## Homework
-
-[Fashion Blog](https://github.com/ga-wdi-exercises/fashion-blog)
 
 ## Resources
 
