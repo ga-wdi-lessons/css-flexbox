@@ -221,9 +221,9 @@ main {
 
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
+- `flex-wrap`
 - `align-content`
 - `flex-grow`
-- `flex-wrap`
 - `order`
 
 Your task is to...
