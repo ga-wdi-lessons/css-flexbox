@@ -222,9 +222,9 @@ main {
 Time for you to research some more Flexbox properties. You will be split into groups and assigned one of the following flex properties...
 
 - `flex-wrap`
-- `align-content`
 - `flex-grow`
 - `order`
+- `align-content`
 
 Your task is to...
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
