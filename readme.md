@@ -1,9 +1,5 @@
 # Flexbox
 
-Screencasts
-- [Part 1](http://youtu.be/wBlBTO7mqoI)
-- [Part 2](http://youtu.be/_I58MXDnBEs)
-
 ## Learning Objectives
 
 - Give an example of a problem solved by Flexbox.
@@ -13,23 +9,21 @@ Screencasts
 
 ## Framing
 
+HTML was created as a document-oriented language. CSS emerged as a way to use language to precisely define stylistic features in a way that wouldn't clutter the semantic content or worse destroy the semantic value all together. CSS pursued the related goal of normalizing styling across browsers. In many ways it acheives this goal well; yet it remains one of the most frustrating parts of web development.
+
 [Obligatory Peter Griffin CSS GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). 
 
-Alignment has traditionally been one of the key contributors to this aggravation.
+It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything and the problem of cross-browser consistency perpetuates this problem.
+
+Alignment has traditionally been one of the key contributors to this aggravation. In the last decade, the importance of alignment has sky rocketed.
 
 > Why might this be?
 
-HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
-
-So layout wasn't much of a concern in the beginning. But as the web has evolved, so have the design needs of developers. Unfortunately, it takes a while for CSS -- and by that we mean the CSS Working Group -- to catch up with those needs.
-
-> It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything, especially cross-browser standards.
-
-Fortunately, Flexbox, a layout mode introduced with CSS3, has slowly but surely become a standard over the past few years. It's designed to ensure that elements on a page behave predictively on varying screen sizes and devices.  
+Fortunately, Flexbox, a layout mode introduced with CSS3, and at this point is widely implemented. There is a slight learning curve but it suplannts whole families of hacks or libraries necessary to achieve intricate layout in an intuitive and maintainable way.
 
 ## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
-Let's start out by talking about a problem that anybody who has written CSS has had to deal with:
+Let's start out by talking about a problem that anybody who has written CSS has likely dealt with:
 
 **I have a `div`. I would like to center it vertically and horizontally on my page.** The end result should look something like this...
 
@@ -85,7 +79,7 @@ div {
 
 </details>
 
-> The tough part is that how to vertically center a element depends on its context. Depending on your situation, one or more of the above techniques could work. [Here's an enlightening post on the matter](https://css-tricks.com/centering-in-the-unknown/).
+The tough part is that how to vertically center a element depends on its context meaning that an element has to look to its parent and then align itself; siblings start to make this very difficult. Depending on your situation, one or more of the above techniques could work. [Here's an enlightening post on the matter](https://css-tricks.com/centering-in-the-unknown/).
 
 ### Flexbox to the Rescue
 
@@ -107,15 +101,28 @@ View solution [here](http://codepen.io/awhitley1233/pen/EZyvMY)
 
 When you declare `display: flex` on a container, it becomes a **flex container**.
 
+Flexbox is distinctly different from the methods described above in that the arrangement of elements is managed by the **parent** container. The child of a **flex container** is called a **flex item**. By default, a flex item does not require any specific styling but item specific properties can be set which we will come to later.
+
+After the display property, the most important flexbox property to understand is `flex-direction`. It is very important to remember that the flex direction sets **the flex containers main-axis direction**. All other flex related properties are formally defined in terms of the main axis.
+
 First, you use `flex-direction` to indicate whether you want the items in the container -- the **flex items** -- to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
 
-When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction: row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. If you use `flex-direction: column` or `column-reverse`, the **main axis** will be the Y-axis.
+| flex-direction | main-axis start |
+|----------------|-----------------|
+| row (default)  | left            |
+| column         | top             |
+| row-reverse    | right           |
+| column-reverse | bottom          |
 
-Then, you determine how you want to align or **justify** the items along this main axis using the `justify-content` property. It'll do nice things for you like let you put even spacing between all the items (`space-between` and `space-around`).
+The `justify-content` property aligns content relative to the main axis. Possible values are: `flex-start` (default), `flex-end`, `center`, `space-between`, and `space-around`.
 
-Finally, you control how you align the items along the axis that goes across the main axis -- the **cross axis**, if you will -- with the `align-items` property. If you have `flex-direction:row`, the main axis is the X-axis, and the cross-axis is the Y-axis.
+> What do you think each does; does the flex-direction effect this?
 
-Lastly, you can also do nice things like control how you want things to line up across the cross-axis by using `align-content`, such as `space-between` and `space-around`.
+The `align-items` property is similar to `justify-content` but aligns relative to the **cross-axis**. There are similar options here: `flex-start`, `flex-end`, `center`, `stretch` (default), and `baseline` (items are aligned by their baselines / where the text is).
+
+By default, a flexbox will arrange its children in a single row or column. The `flex-wrap` property can modify this with the values `nowrap` (default), `wrap`, and `wrap-reverse`.
+
+When text is wrapping, `align-content` controls how the rows or columns are arranged relative to the cross axis: `flex-start`, `flex-end`, `stretch` (default), `center`, `space-between`, and `space-around`.
 
 ### In Summary...
 
@@ -126,7 +133,7 @@ Lastly, you can also do nice things like control how you want things to line up 
 | **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** | Align along flex-direction (main axis) | `center`, `space-between` |
 | **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** | Align along not-flex-direction (cross axis) | `flex-start`, `center` |
 
-> That's a lot of CSS properties! Don't worry, you're not expected to memorize all of them. Us instructors need to look them up all the time! [Here's a great resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+> That's a lot of CSS properties! Don't worry, you're not expected to memorize all of them. Being a developer is less about knowing everything off the top of your head and more about knowing best practices and where to find more info [Here's a great resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Problem 2: Make the Footer Stick (10 minutes / 0:35)
 
@@ -339,6 +346,11 @@ With flexbox, just change the `flex-direction` for smaller screen sizes, make an
 * [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
 * [Flexplorer](http://bennettfeely.com/flexplorer/)
 * [Holy Grail Layout - Solved By Flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/)
+* [Flexbox Froggy](http://flexboxfroggy.com/)
+
+Screencasts
+- [Part 1](http://youtu.be/wBlBTO7mqoI)
+- [Part 2](http://youtu.be/_I58MXDnBEs)
 
 ## Further Reading
 
