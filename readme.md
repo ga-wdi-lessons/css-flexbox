@@ -13,7 +13,11 @@ Screencasts
 
 ## Framing
 
-Check out [this GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). Developers used to feel that way all the time defining page layout using CSS. Why is that?
+[Obligatory Peter Griffin CSS GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif). 
+
+Alignment has traditionally been one of the key contributors to this aggravation.
+
+> Why might this be?
 
 HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
 
