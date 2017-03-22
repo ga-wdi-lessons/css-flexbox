@@ -208,7 +208,7 @@ body {
 ```
 
 <details>
-  <summary><strong>What's the main axis of the `<body>`on here? What about the cross axis?</strong></summary>
+  <summary><strong>What's the main axis of the `body`on here? What about the cross axis?</strong></summary>
 
   > Main: y-axis. Cross: x-axis.
 
