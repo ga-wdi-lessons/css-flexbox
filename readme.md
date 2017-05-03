@@ -105,10 +105,7 @@ The flexbox approach differs from the methods described above in that the arrang
 The child of a **flex container** is called a **flex-items**.
 We can change the way flex-items display by setting item-specific properties that will come later in the lesson.
 
-After the `display` property, the most important flexbox property to understand is `flex-direction`.
-It is very important to remember that the `flex-direction` orients **flex container's main-axis**.
-The main access can set to run vertically or horizontally depending on the value of `flex-direction`.
-All other flex-related properties are defined in terms of the main axis.
+After the `display` property, the most important flexbox property to understand is `flex-direction`. It is very important to remember that the `flex-direction` orients **flex container's main-axis**. The main access can set to run vertically or horizontally depending on the value of `flex-direction`. All other flex-related properties are defined in terms of the main axis.
 
 First, use `flex-direction` to indicate whether you want the `flex-items` in the container to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
 
