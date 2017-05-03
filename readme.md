@@ -242,7 +242,7 @@ Your task is to...
 * Create [a Codepen](http://codepen.io) demonstrating the property's usage, then post it in the `#wdi16-discussion` Slack channel.
 * If possible, practice using some of the flex properties we covered in the previous section.
 
-> You will need to (create a Codepen account)[https://codepen.io/accounts/signup] in order to save your pen and share the link.
+> You will need to [create a Codepen account](https://codepen.io/accounts/signup) in order to save your pen and share the link.
 
 If you finish early, try exploring some of the [other flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) not assigned in this exercise.
 
