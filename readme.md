@@ -3,13 +3,13 @@
 ## Learning Objectives
 
 - Give an example of a problem solved by Flexbox.
-- Contrast flex containers and flex-items.
+- Contrast flex containers and flex items.
 - Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible.
 - Explain what is meant by the "Holy Grail Layout".
 
 ## Framing
 
-HTML was created as a document-oriented language. CSS emerged as a way to use language to precisely define stylistic features in a way that wouldn't clutter the semantic content or worse destroy the semantic value all together. CSS pursued the related goal of normalizing styling across browsers. In many ways it acheives this goal well; yet it remains one of the most frustrating parts of web development.
+HTML was created as a document-oriented language. CSS emerged as a way to use language to precisely define stylistic features in a way that wouldn't clutter the semantic content or worse destroy the semantic value all together. CSS pursued the related goal of normalizing styling across browsers. In many ways it achieves this goal well; yet it remains one of the most frustrating parts of web development.
 
 [Obligatory Peter Griffin CSS GIF](http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif).
 
@@ -19,7 +19,7 @@ Alignment has traditionally been one of the key contributors to this aggravation
 
 > Why might this be?
 
-Fortunately, Flexbox, a layout mode introduced with CSS3, and at this point is widely implemented. There is a slight learning curve but it suplannts whole families of hacks or libraries necessary to achieve intricate layout in an intuitive and maintainable way.
+Fortunately, Flexbox, a layout mode introduced with CSS3, and at this point is widely implemented. There is a slight learning curve but it supplants whole families of hacks or libraries necessary to achieve intricate layout in an intuitive and maintainable way.
 
 ## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
@@ -101,13 +101,11 @@ View solution [here](http://codepen.io/awhitley1233/pen/EZyvMY)
 
 When you declare `display: flex` in a CSS rule, whatever is targeted by that rule becomes a **flex container**.
 
-The flexbox approach differs from the methods described above in that the arrangement of elements is managed by the **parent** container.
-The child of a **flex container** is called a **flex-items**.
-We can change the way flex-items display by setting item-specific properties that will come later in the lesson.
+The flexbox approach differs from the methods described above in that the arrangement of elements is managed by the **parent** container. The child of a **flex container** is called a **flex item**. We can change the way flex items display by setting item-specific properties that will come later in the lesson.
 
 After the `display` property, the most important flexbox property to understand is `flex-direction`. It is very important to remember that the `flex-direction` orients **flex container's main-axis**. The main access can set to run vertically or horizontally depending on the value of `flex-direction`. All other flex-related properties are defined in terms of the main axis.
 
-First, use `flex-direction` to indicate whether you want the `flex-items` in the container to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
+First, use `flex-direction` to indicate whether you want the flex items in the container to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
 
 | flex-direction | main-axis start |
 |----------------|-----------------|
@@ -116,25 +114,24 @@ First, use `flex-direction` to indicate whether you want the `flex-items` in the
 | row-reverse    | right           |
 | column-reverse | bottom          |
 
-The `justify-content` property aligns content relative to the **main axis**.
-Possible values are: `flex-start` (default), `flex-end`, `center`, `space-between`, and `space-around`.
+The `justify-content` property aligns content relative to the **main axis**. Possible values are: `flex-start` (default), `flex-end`, `center`, `space-between`, and `space-around`.
 
 > What do you think each does; does the flex-direction affect this?
 
-The `align-items` property is similar to `justify-content` but aligns relative to the **cross axis**. There are similar options here: `flex-start`, `flex-end`, `center`, `stretch` (default), and `baseline` (items are aligned by their baselines / where the text is).
+The `align-items` property is similar to `justify-content` but aligns relative to the **cross-axis**. There are similar options here: `flex-start`, `flex-end`, `center`, `stretch` (default), and `baseline` (items are aligned by their baselines / where the text is).
 
 By default, a **flex container** will arrange its children in a single row or column. The `flex-wrap` property can modify this with the values `nowrap` (default), `wrap`, and `wrap-reverse`.
 
-When text is wrapping, `align-content` controls how the rows or columns are arranged relative to the cross axis: `flex-start`, `flex-end`, `stretch` (default), `center`, `space-between`, and `space-around`.
+When text is wrapping, `align-content` controls how the rows or columns are arranged relative to the cross-axis: `flex-start`, `flex-end`, `stretch` (default), `center`, `space-between`, and `space-around`.
 
 ### In Summary...
 
 | Property | What's It Do? | Examples |
 |----------|---------------|----------|
 | **display**  |               | `flex`   |
-| **[flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)** | Sets the directional flow of flex-items | `row`, `column` |
-| **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** | Align along flex-direction (main axis) | `center`, `space-between` |
-| **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** | Align along not-flex-direction (cross axis) | `flex-start`, `center` |
+| **[flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)** | Sets the directional flow of flex items | `row`, `column` |
+| **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** | Align along main axis | `center`, `space-between` |
+| **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** | Align along cross-axis | `flex-start`, `center` |
 
 > That's a lot of CSS properties! Don't worry, you're not expected to memorize all of them. Being a developer is less about knowing everything off the top of your head and more about knowing best practices and where to find more info [Here's a great resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
@@ -211,13 +208,12 @@ body {
 ```
 
 <details>
-  <summary><strong>What's the main axis of the `body`on here? What about the cross axis?</strong></summary>
+  <summary><strong>How is main axis of the `body` oriented here? What about the cross-axis?</strong></summary>
 
-  > Main: top-to-bottom. Cross: x-axis.
+  > Main: vertically, Cross: horizontally
 
 </details>
 
-<br />
 
 Now let's horizontally distribute the `<section>` elements containing the page's content inside of the `<main>`. What element should we style?
 
@@ -243,7 +239,7 @@ Time for you to research some more Flexbox properties. You will be split into gr
 Your task is to...
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * List the different values this property can take.
-* Create [a Codepen](http://codepen.io) demonstrating the property's usage, then post it in the discussion Slack channel.
+* Create [a Codepen](http://codepen.io) demonstrating the property's usage, then post it in the `#wdi16-discussion` Slack channel.
 * If possible, practice using some of the flex properties we covered in the previous section.
 
 > You will need to (create a Codepen account)[https://codepen.io/accounts/signup] in order to save your pen and share the link.
@@ -271,7 +267,7 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 <details>
   <summary><strong><code>flex-grow</code></strong></summary>
 
-  > If the flex container is too big for all the flex-items, flex-grow specifies the relative proportion a particular flex-item will occupy
+  > If the flex container is too big for all the flex items, flex-grow specifies the relative proportion a particular flex item will occupy
   >
   > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
@@ -280,7 +276,7 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 <details>
   <summary><strong><code>flex-wrap</code></strong></summary>
 
-  > Defines flex-item behavior if they expand beyond a single line.
+  > Defines flex item behavior if they expand beyond a single line.
   >
   > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
@@ -289,14 +285,14 @@ If you finish early, try exploring some of the [other flexbox properties](https:
 <details>
   <summary><strong><code>order</code></strong></summary>
 
-  > Specifies the order in which you want flex-items to appear along the main access. The default is 0. Negative numbers are allowed.
+  > Specifies the order in which you want flex items to appear along the main access. The default is 0. Negative numbers are allowed.
 
 </details>
 
 <details>
   <summary><strong><code>flex-basis</code></strong></summary>
 
-  > Specifies how big the flex-items "want" to be, or the initial size of a flex-item
+  > Specifies how big the flex items "want" to be, or the initial size of a flex item
   >
   > [Example](https://codepen.io/raphaelgoetter/pen/yyMOOp)
 
