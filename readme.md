@@ -242,7 +242,7 @@ Time for you to research some more Flexbox properties. You will be split into gr
 Your task is to...
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * List the different values this property can take.
-* Create [a Codepen](http://codepen.io) demonstrating the property's usage, then post it in the discussion Slack channel.
+* Create [a Codepen](http://codepen.io) demonstrating the property's usage, then post it in the `#wdi16-discussion` Slack channel.
 * If possible, practice using some of the flex properties we covered in the previous section.
 
 > You will need to (create a Codepen account)[https://codepen.io/accounts/signup] in order to save your pen and share the link.
